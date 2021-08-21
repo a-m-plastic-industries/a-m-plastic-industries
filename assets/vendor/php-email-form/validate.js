@@ -36,6 +36,24 @@ jQuery(document).ready(function($) {
             }
             break;
 
+          case 'phone':
+            if (isNaN(i.val()) || i.val().length !== 10) {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'pincode':
+            if (isNaN(i.val()) || i.val().length !== 6) {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'state':
+            alert(i.val())
+            break;
+
+          
+
           case 'email':
             if (!emailExp.test(i.val())) {
               ferror = ierror = true;

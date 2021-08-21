@@ -521,6 +521,28 @@ section {
   margin-bottom: 0;
 }
 
+.page-title h2{
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 0;
+  color: #5c768d;
+}
+
+.page-title p{
+  margin-bottom: 0;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.inner{
+  background: #f5f9fc;
+  padding: 20px 0px;
+  border-radius: 0px 10px;
+  margin-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
