@@ -42,8 +42,9 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a>
-        <i class="icofont-phone"></i> +91 95585 21097
+        <i class="icofont-envelope"></i>
+          <a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a>
+        <i class="icofont-phone"></i> <a href="tel:+919558521097">+91 955 852 1097</a>
       </div>
       <div class="social-links float-right">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -71,14 +72,14 @@
           <li><a href="company.html">Company Profile</a></li>
            <li class="drop-down"><a href="">Our Products</a>
             <ul>
-              <li><a href="#">PP/HDPE Woven Bag</a></li>
-              <li><a href="#">BOPP Bags</a></li>
-              <li><a href="#">PP/HDPE Woven Fabrics</a></li>
-              <li><a href="#">FIBC Jumbo Bag</a></li>
-              <li><a href="#">Tarpaulins</a></li>
+              <li><a href="hdpe-woven-bag.html">PP/HDPE Woven Bag</a></li>
+              <li><a href="bopp-bags.html">BOPP Bags</a></li>
+              <li><a href="hdpe-woven-fabrics.html">PP/HDPE Woven Fabrics</a></li>
+              <li><a href="fibc-jumbo-bag.html">FIBC Jumbo Bag</a></li>
+              <li><a href="tarpaulins.html">Tarpaulins</a></li>
             </ul>
           </li>
-          <li class="active"><a href="#portfolio">Enquiry</a></li>
+          <li class="active"><a href="#">Enquiry</a></li>
 
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -115,7 +116,7 @@
 
 
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://www.formbackend.com/f/ee58191c21e1c514" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-lg-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -136,10 +137,10 @@
               </div>
                <div class="form-row">
                 <div class="col-lg-4 form-group">
-                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" data-rule="state" data-msg="Please enter a valid state"></select>
+                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="state" class="form-control" data-rule="state" data-msg="Please enter a valid state" required></select>
                </div>
                <div class="col-lg-4 form-group">
-                <select id ="state" class="form-control"></select>
+                <select id ="state" name="city" class="form-control" required></select>
                 <script type="text/javascript">print_state("sts");</script>
               </div>
               <div class="col-lg-4 form-group">
@@ -195,25 +196,25 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Company Profile</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="company.html">Company Profile</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Our Products</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Enquiry</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Products</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">PP/HDPE Woven Bag</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">BOPP Bags</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">PP/HDPE Woven Fabrics</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">FIBC Jumbo Bag</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tarpaulins</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="hdpe-woven-bag.html">PP/HDPE Woven Bag</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="bopp-bags.html">BOPP Bags</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="hdpe-woven-fabrics.html">PP/HDPE Woven Fabrics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="fibc-jumbo-bag.html">FIBC Jumbo Bag</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="tarpaulins.html">Tarpaulins</a></li>
             </ul>
           </div>
 
@@ -223,19 +224,16 @@
               29/B, Kailash Park,   <br>
               O.P. Road, Aksharchowk, <br> 
               Vadodara, Gujarat - 390012.<br><br>
-              <strong>Phone:</strong> +91 95585 21097<br>
-              <strong>Email:</strong> sales.amplastics@gmail.com<br>
+              <strong>Phone:</strong> <a href="tel:+919558521097">+91 955 852 1097</a> <br>
+              <strong>Email:</strong> <a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a> <br>
             </p>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
+        <!--   <div class="col-lg-2 col-md-6 footer-links">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216.92231496232444!2d73.16171644279275!3d22.28232280086349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc6170269d4f5%3A0x8f7eaa82f6d8a2b9!2sKailash%20Park%2C%20Hira%20Nagar%2C%20Tandalja%2C%20Vadodara%2C%20Gujarat%20390020!5e1!3m2!1sen!2sin!4v1629619597729!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div> -->
+
+
 
         </div>
       </div>
@@ -262,6 +260,7 @@
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
