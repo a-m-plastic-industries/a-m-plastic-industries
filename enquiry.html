@@ -61,9 +61,9 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>A. M. Plastic Industries</span></a></h1>
+      
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+         <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
@@ -131,20 +131,20 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="phone" data-msg="Please enter a valid phone number" />
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="phone" data-msg="Please enter a valid 10 digits phone number" maxlength="10" />
                   <div class="validate"></div>
                 </div>
               </div>
                <div class="form-row">
                 <div class="col-lg-4 form-group">
-                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="state" class="form-control" data-rule="state" data-msg="Please enter a valid state" required></select>
+                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="state" class="form-control state-city-dropdown" data-rule="state" data-msg="Please enter a valid state" required></select>
                </div>
                <div class="col-lg-4 form-group">
-                <select id ="state" name="city" class="form-control" required></select>
+                <select id ="state" name="city" class="form-control state-city-dropdown" required></select>
                 <script type="text/javascript">print_state("sts");</script>
               </div>
               <div class="col-lg-4 form-group">
-                <input type="text" class="form-control" name="pincode" id="pincode" placeholder="Your Pincode" data-rule="pincode" data-msg="Please enter a valid pincode number" />
+                <input type="text" class="form-control" name="pincode" id="pincode" placeholder="Your Pincode" data-rule="pincode" data-msg="Please enter a valid 6 digits pincode number" />
                   <div class="validate"></div>
               </div>
               <div class="col-lg-12 form-group">
@@ -153,7 +153,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:8" data-msg="Please enter at least 8 chars of subject" / style="font-size: 14px;">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" / style="font-size: 14px;">
                 <div class="validate"></div>
               </div>
               <div class="form-group">

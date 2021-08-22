@@ -1377,3 +1377,7 @@ section {
 #footer .credits a {
   color: #9eccf4;
 }
+
+.state-city-dropdown{
+  font-size: 14px;
+}
