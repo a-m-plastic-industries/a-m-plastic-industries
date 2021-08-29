@@ -26,6 +26,41 @@
          * Author: BootstrapMade.com
          * License: https://bootstrapmade.com/license/
          ======================================================== -->
+      <link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />
+      <script src="assets/js/jquery-v3x.min.js"></script>
+      <script src="assets/js/lightslider.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+           $(document).ready(function() {
+         $('#products').lightSlider({
+           item:3,
+           loop:false,
+           slideMove:3,
+           easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+           speed:600,
+           auto:true,
+           responsive : [
+               {
+                   breakpoint:800,
+                   settings: {
+                       item:2,
+                       slideMove:2,
+                       slideMargin:6,
+                     }
+               },
+               {
+                   breakpoint:480,
+                   settings: {
+                       item:1,
+                       slideMove:1
+                     }
+               }
+           ]
+         });  
+         });
+              
+          });
+      </script>
    </head>
    <body>
       <!-- ======= Top Bar ======= -->
@@ -209,164 +244,67 @@
          <!-- ======= Our Portfolio Section ======= -->
          <section id="portfolio" class="portfolio section-bg">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-
                <div class="row">
                   <div class="col-lg-12">
                      <div class="page-title inner">
                         <h2>Product Range</h2>
                      </div>
-                     <!-- <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
-                        </ul> -->
-                  </div>
-               </div>
-                 <div class="row portfolio-container">
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-01.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-01.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-02.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-02.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-03.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-03.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-04.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-04.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-05.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-05.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-06.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-06.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-07.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-07.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-08.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-08.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-09.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-09.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-10.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-10.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-11.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-11.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-12.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-12.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-13.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-13.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-14.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-14.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-15.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-15.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-16.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-16.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-17.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-17.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                     <div class="portfolio-wrap">
-                        <img src="assets/img/products/products-18.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                           <div class="portfolio-links"> <a href="assets/img/products/products-18.jpg" data-gall="portfolioGallery" class="venobox" title="View"><i class="icofont-eye"></i></a> <a href="#" title="More Details"><i class="icofont-external-link"></i></a> </div>
-                        </div>
-                     </div>
+                     <ul id="products">
+                        <li>
+                           <img src="assets/img/products/products-01.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-02.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-03.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-04.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-05.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-06.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-07.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-08.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-09.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-10.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-11.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-12.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-13.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-14.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-15.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-16.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-17.jpg" class="img-fluid" alt="">
+                        </li>
+                        <li>
+                           <img src="assets/img/products/products-18.jpg" class="img-fluid" alt="">
+                        </li>
+                     </ul>
                   </div>
                </div>
             </div>
@@ -374,143 +312,149 @@
          <!-- End Our Portfolio Section -->
          <!-- ======= Contact Us Section ======= -->
          <section id="contact" class="contact">
-      <div class="container">
-         <div class="container">
-               <div class="page-title">
-                  <h2>Contact Us</h2>
-                  <br>
+            <div class="container">
+               <div class="container">
+                  <div class="page-title">
+                     <h2>Contact Us</h2>
+                     <br>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-12 d-flex align-items-stretch" data-aos="fade-up">
+                     <div class="info-box">
+                        <i class="bx bx-map"></i>
+                        <h3>Head Office</h3>
+                        <p>29/B, Kailash Park,
+                           <br>O.P. Road, Aksharchowk,
+                           <br>Vadodara, Gujarat - 390012
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                     <div class="info-box">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email Us</h3>
+                        <table class="table" style="font-size: 14px;">
+                           <tbody>
+                              <tr>
+                                 <td><a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a></td>
+                              </tr>
+                              <tr>
+                                 <td><a href="mailto:amplasticindustries@gmail.com">amplasticindustries@gmail.com</a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                     <div class="info-box ">
+                        <i class="bx bx-phone-call"></i>
+                        <h3>Call Us</h3>
+                        <table class="table" style="font-size: 14px;">
+                           <tbody>
+                              <tr>
+                                 <td style="color: #428bca;">Mr. Divyesh Agrawal</td>
+                                 <td><a href="tel:+919558251097">+91 955 852 1097</a></td>
+                              </tr>
+                              <tr>
+                                 <td style="color: #428bca;">Mr. Sagar Agrawal</td>
+                                 <td><a href="tel:+918490801910">+91 849 080 1910</a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                     <div class="info-box ">
+                        <i class="bx bx-pointer"></i>
+                        <h3>Website</h3>
+                        <table class="table" style="font-size: 14px;">
+                           <tbody>
+                              <tr>
+                                 <td><a href="https://bit.ly/AMPLASTICINDUSTRIES">A. M. Plastic Industries</a></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
                </div>
             </div>
-        <div class="row">
-          <div class="col-lg-12 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box"> <i class="bx bx-map"></i>
-              <h3>Head Office</h3>
-              <p>29/B, Kailash Park,
-                <br>O.P. Road, Aksharchowk,
-                <br>Vadodara, Gujarat - 390012</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="info-box"> <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <table class="table" style="font-size: 14px;">
-                <tbody>
-                  <tr>
-                    <td><a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="mailto:amplasticindustries@gmail.com">amplasticindustries@gmail.com</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-box "> <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <table class="table" style="font-size: 14px;">
-                <tbody>
-                  <tr>
-                    <td style="color: #428bca;">Mr. Divyesh Agrawal</td>
-                    <td><a href="tel:+919558251097">+91 955 852 1097</a></td>
-                  </tr>
-                  <tr>
-                    <td style="color: #428bca;">Mr. Sagar Agrawal</td>
-                    <td><a href="tel:+918490801910">+91 849 080 1910</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-box "> <i class="bx bx-pointer"></i>
-              <h3>Website</h3>
-              <table class="table" style="font-size: 14px;">
-                <tbody>
-                  <tr>
-                    <td><a href="https://bit.ly/AMPLASTICINDUSTRIES">A. M. Plastic Industries</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+         </section>
          <!-- End Contact Us Section -->
       </main>
       <!-- End #main -->
       <!-- ======= Footer ======= -->
-<footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>A. M. Plastic Industries</h3>
-            <p> A.M.Plastic Industries is one of the leading supplier & manufacturer of PP Woven Sacks, HDPE Bags, BOPP Bags, FIBC Jumbo Bags, Woven Fabrics and Tarpaulins for application of Chemical, Fertilizer, Food, Pharmaceuticals, Mining etc. </p>
-            <div class="social-links mt-3"> <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> </div>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="company.html">Company Profile</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Our Products</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="enquiry.html">Enquiry</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Products</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="hdpe-woven-bag.html">PP/HDPE Woven Bag</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="bopp-bags.html">BOPP Bags</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="hdpe-woven-fabrics.html">PP/HDPE Woven Fabrics</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="fibc-jumbo-bag.html">FIBC Jumbo Bag</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="tarpaulins.html">Tarpaulins</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Contact Us</h3>
-            <p> 29/B, Kailash Park,
-              <br> O.P. Road, Aksharchowk,
-              <br> Vadodara, Gujarat - 390012.
-              <br>
-              <br> <strong>Phone:</strong>
-              <br> <a href="tel:+919558521097">+91 955 852 1097</a> <br> Mr. Divyesh Agrawal
-              <br>
-              <br> <strong>Email:</strong>
-              <br> <a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a>
-              <br> </p>
-          </div>
-          <!--   <div class="col-lg-2 col-md-6 footer-links">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216.92231496232444!2d73.16171644279275!3d22.28232280086349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc6170269d4f5%3A0x8f7eaa82f6d8a2b9!2sKailash%20Park%2C%20Hira%20Nagar%2C%20Tandalja%2C%20Vadodara%2C%20Gujarat%20390020!5e1!3m2!1sen!2sin!4v1629619597729!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div> --></div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="copyright" id="copyright"> </div>
-    </div>
-  </footer>
-  <!-- End Footer --><a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
-  document.getElementById("copyright").innerHTML = " &copy; Copyright " + new Date().getFullYear() + " <strong><span>A. M. Plastics Industries</span></strong>. All Rights Reserved ";
-  </script>
-</body>
-
+      <footer id="footer">
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-info">
+                     <h3>A. M. Plastic Industries</h3>
+                     <p> A.M.Plastic Industries is one of the leading supplier & manufacturer of PP Woven Sacks, HDPE Bags, BOPP Bags, FIBC Jumbo Bags, Woven Fabrics and Tarpaulins for application of Chemical, Fertilizer, Food, Pharmaceuticals, Mining etc. </p>
+                     <div class="social-links mt-3"> <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-links">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="company.html">Company Profile</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Our Products</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="enquiry.html">Enquiry</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-links">
+                     <h4>Our Products</h4>
+                     <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="hdpe-woven-bag.html">PP/HDPE Woven Bag</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="bopp-bags.html">BOPP Bags</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="hdpe-woven-fabrics.html">PP/HDPE Woven Fabrics</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="fibc-jumbo-bag.html">FIBC Jumbo Bag</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="tarpaulins.html">Tarpaulins</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-info">
+                     <h3>Contact Us</h3>
+                     <p> 29/B, Kailash Park,
+                        <br> O.P. Road, Aksharchowk,
+                        <br> Vadodara, Gujarat - 390012.
+                        <br>
+                        <br> <strong>Phone:</strong>
+                        <br> <a href="tel:+919558521097">+91 955 852 1097</a> <br> Mr. Divyesh Agrawal
+                        <br>
+                        <br> <strong>Email:</strong>
+                        <br> <a href="mailto:sales.amplastics@gmail.com">sales.amplastics@gmail.com</a>
+                        <br> 
+                     </p>
+                  </div>
+                  <!--   <div class="col-lg-2 col-md-6 footer-links">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216.92231496232444!2d73.16171644279275!3d22.28232280086349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc6170269d4f5%3A0x8f7eaa82f6d8a2b9!2sKailash%20Park%2C%20Hira%20Nagar%2C%20Tandalja%2C%20Vadodara%2C%20Gujarat%20390020!5e1!3m2!1sen!2sin!4v1629619597729!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     </div> -->
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="copyright" id="copyright"> </div>
+         </div>
+      </footer>
+      <!-- End Footer --><a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+      <!-- Vendor JS Files -->
+      <!-- <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+      <script src="assets/vendor/venobox/venobox.min.js"></script>
+      <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+      <script src="assets/vendor/counterup/counterup.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+      <script>
+         document.getElementById("copyright").innerHTML = " &copy; Copyright " + new Date().getFullYear() + " <strong><span>A. M. Plastics Industries</span></strong>. All Rights Reserved ";
+      </script>
+   </body>
 </html>
